@@ -732,7 +732,7 @@
 
 /* ---------------- @media | Mobility | Fixed screen --------------------*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .sub_customer {
    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
  }
@@ -753,6 +753,18 @@
  .image_slider{
    width: 70%;
  }
+.product {
+  flex-direction: column; /* for header is shown as column */
+  text-align: right;
+  padding:80px;
+}
+.col_1{
+  width: 100%;
+  /* text-align: center; */
+  margin-left: 3px;
+  /* distance between 2 boxex are column mainly */
+  /* border: 2px solid #e31e30; */
+}
  #flex_container_insurance{
   flex-direction: column; /* for showing boxes as column */
   align-items: center;    /* for putting items of boxex in the Center or Start or End */
