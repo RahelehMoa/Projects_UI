@@ -1,0 +1,18 @@
+.h3_delay {
+    width: 300px;
+    height: 70px;
+    background-color: rgb(102, 152, 157);
+    position: relative;
+    animation-name: example;
+    animation-duration: 12s;
+    animation-direction: reverse; 
+    animation-delay: -3s;
+  }
+
+  @keyframes example {
+    0%   {background-color:rgb(132, 172, 169); left:0px; top:0px;}
+    25%  {background-color:rgb(65, 126, 122); left:200px; top:0px;}
+    50%  {background-color:rgb(128, 154, 155); left:200px; top:200px;}
+    75%  {background-color:rgb(43, 150, 144); left:0px; top:200px;}
+    100% {background-color:rgb(76, 120, 124); left:0px; top:0px;}
+  }
