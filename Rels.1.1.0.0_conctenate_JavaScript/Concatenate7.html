@@ -16,13 +16,23 @@
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
+       const FullNamePerson = {
+            firstName: "Raheleh",
+            lastName: "Moallemi",
+            age: 40,
+            eyeColor: "Green"
+        };
+
+        // Create a Copy
+        const x = FullNamePerson;
+
+        // Change Age
+        x.age = 38;
 
        // Display Data from the Object:
        document.getElementById("show").innerHTML =
-       "The car class is " + BMWCar.class;
-       document.getElementById("show").innerHTML =
-       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+       FullNamePerson.firstName + "" + FullNamePerson.lastName + " is " + FullNamePerson.age + " years old.";
+       
 
    </script>
 
