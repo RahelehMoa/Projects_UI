@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind of Objects</title>
+</head>
+<body>
+    <!-- We use of html and script javaScript in html file as inline javascrpt. -->
+    <h1>JavaScript Objects</h1>
+    <h2>Creating an Object</h2>
+    
+    <p id="show"></p>
+    <!-- show is for display and read data in javaScript -->
+    <script>
+       // Create an Object: we define one object
+       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
+
+       // Display Data from the Object:
+       document.getElementById("show").innerHTML =
+       "The car class is " + BMWCar.class;
+       document.getElementById("show").innerHTML =
+       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+
+   </script>
+
+</body>
+</html>
