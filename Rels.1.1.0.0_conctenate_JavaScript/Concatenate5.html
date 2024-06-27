@@ -8,20 +8,22 @@
 <body>
     <!-- We use of html and script javaScript in html file as inline javascrpt. -->
     <h1>JavaScript Objects and Kind of Objects and Functions</h1>
-    <p>There are two ways to access a property: object.property or object["property"]</p>
+    <p>There are two ways to access a property: object.property = FullNamePerson.Id or object["property"] = FullNamePerson["Id"]</p>
 
     
     <p id="show"></p>
     <!-- show is for display and read data in javaScript -->
     <script>
-       // Create an Object: we define one object
-       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
+       // Create an Object: we define one object ; Object = FullNamePersonand  / Property = firstName or Id
+       const FullNamePerson = {
+            firstName: "John",
+            lastName: "Jack",
+            Id: "5566Jakn",
+        }; 
 
        // Display Data from the Object:
        document.getElementById("show").innerHTML =
-       "The car class is " + BMWCar.class;
-       document.getElementById("show").innerHTML =
-       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+       "The id is " + FullNamePerson["Id"];
 
    </script>
 

@@ -13,15 +13,15 @@
     <p id="show"></p>
     <!-- show is for display and read data in javaScript -->
     <script>
-       // Create an Object: we define one object
+       // Create an Object: we define one object new Object();
        const FullNamePerson = new Object();
        FullNamePerson.firstName = "John";
        FullNamePerson.lastName = "Jack";
        FullNamePerson.age = 50;
        FullNamePerson.eyeColor = "black";
-       FullNamePerson.company = "Supervision"
+       FullNamePerson.company = "Supervision";
 
-       // Display Data from the Object:
+       // Display Data from the Object: we dont write inside of property as we show the inside of property shcu as "Jack" or "50".
        document.getElementById("show").innerHTML =
        FullNamePerson.firstName + " " +"and" + " " + FullNamePerson.lastName + " " + "are" + " " + FullNamePerson.age + " " +" years old" + " " + "in" + " " + FullNamePerson.company + " " +"Company.";
    </script>

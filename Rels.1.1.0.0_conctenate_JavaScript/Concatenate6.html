@@ -8,20 +8,25 @@
 <body>
    <!-- We use of html and script javaScript in html file as inline javascrpt. -->
    <h1>JavaScript Objects and Kind of Objects and Functions</h1>
-   <p>A method is a function definition stored as a property value.</p>
+   <h2>Important codes that is for Concatenate_JavaScript</h2>
+   <p>Concatenate = A method is a function definition stored as a property value.</p>
 
    
    <p id="show"></p>
    <!-- show is for display and read data in javaScript -->
    <script>
       // Create an Object: we define one object
-      const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
-
+      const FullNamePerson = {
+            firstName: "Raheleh",
+            lastName: "Moallemi",
+            id: "Rmll17",
+            Company: "Reberning",
+            fullName: function () {
+                return this.firstName + " " + this.lastName +"that is full name and id is also"+ this.id;
+            }
+        };
       // Display Data from the Object:
-      document.getElementById("show").innerHTML =
-      "The car class is " + BMWCar.class;
-      document.getElementById("show").innerHTML =
-      "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+      document.getElementById("show").innerHTML = FullNamePerson.fullName();
 
   </script>
 
