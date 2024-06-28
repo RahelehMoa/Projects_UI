@@ -15,13 +15,18 @@
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
+       const myObj = {
+            name: "John",
+            age: 30,
+            myCars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Fiat"
+            }
+        }
 
        // Display Data from the Object:
-       document.getElementById("show").innerHTML =
-       "The car class is " + BMWCar.class;
-       document.getElementById("show").innerHTML =
-       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+       document.getElementById("show").innerHTML = myObj.myCars.car2;
 
    </script>
 

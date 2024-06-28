@@ -8,19 +8,21 @@
 <body>
     <!-- We use of html and script javaScript in html file as inline javascrpt. -->
     <h1>JavaScript Objects and Kind of Objects and Functions</h1>
-    <h2>Access a Property with []</h2>
+    <h2>Access a Property with krushe []</h2>
     
     <p id="show"></p>
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
-
+       const FullNamePerson = {
+            firstname1: "John",
+            firstname2: "Jack",
+            age: 50,
+            eyecolor: "black",
+            company: "Rebernig",
+        };
        // Display Data from the Object:
-       document.getElementById("show").innerHTML =
-       "The car class is " + BMWCar.class;
-       document.getElementById("show").innerHTML =
-       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+       document.getElementById("show").innerHTML = FullNamePerson["firstname1"] + " " +"and"+ " " + FullNamePerson["firstname2"] + " are " + FullNamePerson["age"] + " years old in" + " " +FullNamePerson["company"] + ".";
 
    </script>
 

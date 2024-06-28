@@ -14,13 +14,19 @@
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       const BMWCar = { type:"BMW" , model:"720.Z", color: "Grey" , class:"light"}; 
+       function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create a Person object
+        const myFather = new Person("John", "Doe", 50, "blue");
 
        // Display Data from the Object:
        document.getElementById("show").innerHTML =
-       "The car class is " + BMWCar.class;
-       document.getElementById("show").innerHTML =
-       "The car type and model are" + BMWCar.type + " " + BMWCar.model;
+            "My father is " + myFather.age + "."; 
 
    </script>
 
