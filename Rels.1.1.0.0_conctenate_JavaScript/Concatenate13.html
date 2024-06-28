@@ -14,21 +14,21 @@
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       const person = {
-            firstName: "John",
-            lastName: "Doe",
-            id: 5566,
+       const FullNamePerson = {
+            firstName: "Raheleh",
+            lastName: "Moallemi",
+            id: "Rahelehmll17",
         };
 
         // Add a Method
-        person.name = function () {
+        FullNamePerson.name = function () {
             return (this.firstName + " " + this.lastName).toUpperCase();
         };
 
 
        // Display Data from the Object:
-       document.getElementById("demo").innerHTML =
-            "My father is " + person.name(); 
+       document.getElementById("show").innerHTML =
+            "I am " + FullNamePerson.name(); 
    </script>
 
 </body>

@@ -14,7 +14,7 @@
     <!-- show is for display and read data in javaScript -->
     <script>
        // Create an Object: we define one object
-       function Person(first, last, age, eye) {
+       function FullNamePerson(first, last, age, eye) {
             this.firstName = first;
             this.lastName = last;
             this.age = age;
@@ -22,11 +22,11 @@
         }
 
         // Create a Person object
-        const myFather = new Person("John", "Doe", 50, "blue");
+        const PersonDetails = new FullNamePerson("Raheleh", "Moallemi", 38, "Green");
 
        // Display Data from the Object:
        document.getElementById("show").innerHTML =
-            "My father is " + myFather.age + "."; 
+            "I am " + PersonDetails.age + "."; 
 
    </script>
 
