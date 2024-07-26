@@ -6,7 +6,8 @@
     padding: 40px;
     overflow: auto;
     font-size: small;
-    transition-delay: 5s;
+    transition: all 5s;
+    transition-delay: all 5s;
 }
 
 #show:hover {
