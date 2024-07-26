@@ -19,3 +19,10 @@
     font-size: small;
     
 }
+
+#more {
+    display: none;
+}
+#dots{
+    display:inline;
+}
